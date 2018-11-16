@@ -1,0 +1,457 @@
+[
+  {
+    "path": "$.GENBD",
+    "label": "GENBD (General beds)",
+    "visible": true,
+    "icon": "bed"
+  },
+  {
+    "path": "$.PEDBD",
+    "label": "PEDBD (Pediatric Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "96A0FF"
+  },
+  {
+    "path": "$.OBLEV",
+    "label": "OBLEV (Obstetric Level)",
+    "visible": true,
+    "icon": "sort-numeric-down",
+    "iconColor": "FF96DF"
+  },
+  {
+    "path": "$.OBBD",
+    "label": "OBBD (Obstetric Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "FF96DF"
+  },
+  {
+    "path": "$.MSICBD",
+    "label": "MSICBD (Med/Surg Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "3CC697"
+  },
+  {
+    "path": "$.CICBD",
+    "label": "CICBD (Cardiac Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "F66767"
+  },
+  {
+    "path": "$.NICBD",
+    "label": "NICBD (Neonatal Intensive Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "D496FF"
+  },
+  {
+    "path": "$.NINTBD",
+    "label": "NINTBD (Neonatal Intermediate Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "FFBC67"
+  },
+  {
+    "path": "$.PEDICBD",
+    "label": "PEDICBD (Pediatric Intensive Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "A2558B"
+  },
+  {
+    "path": "$.BRNBD",
+    "label": "BRNBD (Burn Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "CD7878"
+  },
+  {
+    "path": "$.SPCICBD",
+    "label": "SPCICBD (Other Special Beds)",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "999885"
+  },
+  {
+    "path": "$.OSPOTH",
+    "label": "OSPOTH (Other Special Desc.)",
+    "visible": true,
+    "icon": "file-alt",
+    "iconColor": "999885"
+  },
+  {
+    "path": "$.GENHOS",
+    "label": "GENHOS (General Medical/Surgical Care Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.GENSYS",
+    "label": "GENSYS (General Medical/Surgical Care Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.GENVEN",
+    "label": "GENVEN (General Medical/Surgical Care Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.PEDHOS",
+    "label": "PEDHOS (General Medical/Surgical Care Pediatric Hospital)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.PEDSYS",
+    "label": "PEDSYS (General Medical/Surgical Care Pediatric Health System)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.PEDVEN",
+    "label": "PEDVEN (General Medical/Surgical Care Pediatric Joint Venture)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.OBHOS",
+    "label": "OBHOS (Obstetrics Care Hospital)",
+    "visible": true,
+    "icon": "female"
+  },
+  {
+    "path": "$.OBSYS",
+    "label": "OBSYS (Obstetrics Care Health System)",
+    "visible": true,
+    "icon": "female"
+  },
+  {
+    "path": "$.OBVEN",
+    "label": "OBVEN (Obstetrics Care Joint Venture)",
+    "visible": true,
+    "icon": "female"
+  },
+  {
+    "path": "$.MSICHOS",
+    "label": "MSICHOS (Medical/Surgical Intensive Care Hospital)",
+    "visible": true,
+    "icon": "medkit"
+  },
+  {
+    "path": "$.MSICSYS",
+    "label": "MSICSYS (Medical/Surgical Intensive Care Health System)",
+    "visible": true,
+    "icon": "medkit"
+  },
+  {
+    "path": "$.MSICVEN",
+    "label": "MSICVEN (Medical/Surgical Intensive Care Joint Venture)",
+    "visible": true,
+    "icon": "medkit"
+  },
+  {
+    "path": "$.CICHOS",
+    "label": "CICHOS (Cardiac Intensive Care Hospital)",
+    "visible": true,
+    "icon": "heartbeat"
+  },
+  {
+    "path": "$.CICSYS",
+    "label": "CICSYS (Cardiac Intensive Care Health System)",
+    "visible": true,
+    "icon": "heartbeat"
+  },
+  {
+    "path": "$.CICVEN",
+    "label": "CICVEN (Cardiac Intensive Care Joint Venture)",
+    "visible": true,
+    "icon": "heartbeat"
+  },
+  {
+    "path": "$.NICHOS",
+    "label": "NICHOS (Neonatal Intensive Care Hopsital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.NICSYS",
+    "label": "NICSYS (Neonatal Intensive Care Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.NICVEN",
+    "label": "NICVEN (Neonatal Intensive Care Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.NINTHOS",
+    "label": "NINTHOS (Neonatal Intermediate Care Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.NINTSYS",
+    "label": "NINTSYS (Neonatal Intermediate Care Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.NINTVEN",
+    "label": "NINTVEN (Neonatal Intermediate Care Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.PEDICHOS",
+    "label": "PEDICHOS (Pediatric Intensive Care Hospital)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.PEDICSYS",
+    "label": "PEDICSYS (Pediatric Intensive Care Health System)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.PEDICVEN",
+    "label": "PEDICVEN (Pediatric Intensive Care Joint Venture)",
+    "visible": true,
+    "icon": "child"
+  },
+  {
+    "path": "$.BRNHOS",
+    "label": "BRNHOS (Burn Care Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.BRNSYS",
+    "label": "BRNSYS (Burn Care Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.BRNVEN",
+    "label": "BRNVEN (Burn Care Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.SPCICHOS",
+    "label": "SPCICHOS (Special Care Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.SPCICSYS",
+    "label": "SPCICSYS (Special Care Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.SPCICVEN",
+    "label": "SPCICVEN (Special Care Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.EMDEPHOS",
+    "label": "EMDEPHOS (Emergency Department Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.EMDEPSYS",
+    "label": "EMDEPSYS (Emergency Department Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.EMDEPVEN",
+    "label": "EMDEPVEN (Emergency Department Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.PEMERHOS",
+    "label": "PEMERHOS (Pediatric Emergency Department Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.PEMERSYS",
+    "label": "PEMERSYS (Pediatric Emergency Department Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.PEMERVEN",
+    "label": "PEMERVEN (Pediatric Emergency Department Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.FSERHOS",
+    "label": "FSERHOS (Freestanding/Satellite Emergency Department Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.FSERSYS",
+    "label": "FSERSYS (Freestanding/Satellite Emergency Department Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.FSERVEN",
+    "label": "FSERVEN (Freestanding/Satellite Emergency Department Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.TRAUMHOS",
+    "label": "TRAUMHOS (Certified Trauma Center Hospital)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.TRAUMSYS",
+    "label": "TRAUMSYS (Certified Trauma Center Health System)",
+    "visible": true,
+    "icon": "h-square"
+  },
+  {
+    "path": "$.TRAUMVEN",
+    "label": "TRAUMVEN (Certified Trauma Center Joint Venture)",
+    "visible": true,
+    "icon": "plus-square"
+  },
+  {
+    "path": "$.TRAUML90",
+    "label": "TRAUML90 (Level of Trauma Center)",
+    "visible": true,
+    "icon": "sort-numeric-down"
+  },
+  {
+    "path": "$.LBEDSA",
+    "label": "LBEDSA (Licensed Beds Total Facility)",
+    "visible": true,
+    "icon": "bed"
+  },
+  {
+    "path": "$.ADMTOT",
+    "label": "ADMTOT (Total Facility Admissions)",
+    "visible": true,
+    "icon": ["far", "arrow-alt-circle-right"]
+  },
+  {
+    "path": "$.IPDTOT",
+    "label": "IPDTOT (Total Facility Inpatient Days)",
+    "visible": true,
+    "icon": ["far", "calendar-check"]
+  },
+  {
+    "path": "$.LBEDLA",
+    "label": "LBEDLA (Nursing Home Licensed Beds)",
+    "visible": true,
+    "icon": "bed"
+  },
+  {
+    "path": "$.ADMLT",
+    "label": "ADMLT (Nursing Home Admissions)",
+    "visible": true,
+    "icon": ["far", "arrow-alt-circle-right"]
+  },
+  {
+    "path": "$.IPDLT",
+    "label": "IPDLT (Nursing Home Inpatient Days)",
+    "visible": true,
+    "icon": ["far", "calendar-check"]
+  },
+  {
+    "path": "$.VEM",
+    "label": "VEM (Emergency Room Visits)",
+    "visible": true,
+    "icon": ["far", "check-square"]
+  },
+  {
+    "path": "$.FTMDTF",
+    "label": "FTMDTF (Full-time Physicians and Dentists)",
+    "visible": true,
+    "icon": "user-md"
+  },
+  {
+    "path": "$.FTRNTF",
+    "label": "FTRNTF (Full-time Registered Nurses)",
+    "visible": true,
+    "icon": "registered"
+  },
+  {
+    "path": "$.PTMDTF",
+    "label": "PTMDTF (Part-time Physicians and Dentists)",
+    "visible": true,
+    "icon": "user-md"
+  },
+  {
+    "path": "$.PTRNTF",
+    "label": "PTRNTF (Part-time Registered Nurses)",
+    "visible": true,
+    "icon": "registered"
+  },
+  {
+    "path": "$.FTED",
+    "label": "FTED (Physicians and Dentists FTE)",
+    "visible": true,
+    "icon": "user-md"
+  },
+  {
+    "path": "$.FTEN",
+    "label": "FTEN (Registered Nurses FTE)",
+    "visible": true,
+    "icon": "registered"
+  },
+  {
+    "path": "$.VMD",
+    "label": "VMD (Physicians and Dentists Vacancies)",
+    "visible": true,
+    "icon": "user-md"
+  },
+  {
+    "path": "$.VRN",
+    "label": "VRN (Registered Nurses Vacancies)",
+    "visible": true,
+    "icon": "registered"
+  },
+  {
+    "path": "$.HSPTL",
+    "label": "HSPTL (Hospitalists Provide Care)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.FTEHSP",
+    "label": "FTEHSP (Hospitalists FTE)",
+    "visible": true,
+    "icon": ["far", "hospital"]
+  },
+  {
+    "path": "$.SNT",
+    "label": "SNT (Provide Services via Satellite Facilities?)",
+    "visible": true,
+    "icon": "globe"
+  },
+  {
+    "path": "$.RNSCH",
+    "label": "RNSCH (Number of New Graduate RNs)",
+    "visible": true,
+    "icon": "graduation-cap"
+  }
+]

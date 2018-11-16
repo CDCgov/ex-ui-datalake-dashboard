@@ -1,0 +1,120 @@
+{
+	"mongo": {
+		"database": "datahub",
+		"collection": "survey"
+	},
+	"elastic": {
+		"index": "datahub",
+		"type": "survey"
+	},
+	"mapping": {
+		"$unset": [
+			"_id",
+			"NINTBD",
+			"OBSYS",
+			"IPDTOT",
+			"BRNBD",
+			"CICSYS",
+			"BRNVEN",
+			"PTMDTF",
+			"FSERVEN",
+			"PEDICVEN",
+			"OSPOTH",
+			"VRN",
+			"RNSCH",
+			"CICHOS",
+			"SPCICBD",
+			"MSICBD",
+			"TRAUMVEN",
+			"FTMDTF",
+			"ADMTOT",
+			"PEMERHOS",
+			"ADMLT",
+			"BRNSYS",
+			"NICVEN",
+			"BRNHOS",
+			"PEMERSYS",
+			"TRAUMSYS",
+			"PEDHOS",
+			"PEDSYS",
+			"TRAUMHOS",
+			"OBLEV",
+			"SPCICVEN",
+			"OBVEN",
+			"NINTVEN",
+			"EMDEPVEN",
+			"LBEDLA",
+			"MSICVEN",
+			"FSERSYS",
+			"CICVEN",
+			"FSERHOS",
+			"FTEHSP",
+			"PEDVEN",
+			"HSPTL",
+			"FTRNTF",
+			"NICBD",
+			"FTED",
+			"CICBD",
+			"LBEDSA",
+			"GENVEN",
+			"FTEN",
+			"SNT",
+			"PEDICBD",
+			"PEDICHOS",
+			"PEDICSYS",
+			"SPCICSYS",
+			"NINTHOS",
+			"SPCICHOS",
+			"GENHOS",
+			"GENSYS",
+			"NINTSYS",
+			"EMDEPHOS",
+			"MSICHOS",
+			"EMDEPSYS",
+			"MSICSYS",
+			"VMD",
+			"IPDLT",
+			"OBBD",
+			"PEDBD",
+			"TRAUML90",
+			"NICHOS",
+			"GENBD",
+			"NICSYS",
+			"PTRNTF",
+			"PEMERVEN",
+			"VEM"
+		],
+		"$set": {
+			
+		}
+	},
+	"filters": {
+		"year": {
+			"regex": "year:(\\w+)",
+			"regexGroup": 1,
+			"queryType": "multi_match",
+			"clause": "must",
+			"fields": [
+				"year"
+			]
+		},
+		"OBHOS": {
+			"regex": "OBHOS:(\\w+)",
+			"regexGroup": 1,
+			"queryType": "multi_match",
+			"clause": "must",
+			"fields": [
+				"OBHOS"
+			]
+		}
+	},
+	"appendToQuery": {
+		"aggs": {
+			"years": {
+				"terms": {
+					"field": "year"
+				}
+			}
+		}
+	}
+}
