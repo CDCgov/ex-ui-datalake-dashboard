@@ -1,0 +1,122 @@
+version: '3'
+services:
+  fluentd:
+    image: fluent/fluentd
+    ports:
+      - "24224:24224"
+  fdns-ms-storage:
+    image: cdcgov/fdns-ms-storage
+    depends_on:
+      - minio
+    ports:
+      - "8082:8082"
+    environment:
+      STORAGE_PORT: 8082
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    command: server ~/Downloads/minio
+  fdns-ms-object:
+    image: cdcgov/fdns-ms-object
+    depends_on:
+      - mongo
+    ports:
+      - "8083:8083"
+    environment:
+      OBJECT_PORT: 8083
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  fdns-ms-indexing:
+    image: cdcgov/fdns-ms-indexing
+    depends_on:
+      - elastic
+    ports:
+      - "8084:8084"
+    environment:
+      INDEXING_PORT: 8084
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.3.0
+    ports:
+      - "9200:9200"
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+  zookeeper:
+    image: confluentinc/cp-zookeeper:3.2.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
+  kafka:
+    ports:
+      - "29092:29092"
+    image: confluentinc/cp-kafka:3.2.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:32181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092
+
+  fdns-ms-reporting:
+    image: cdcgov/fdns-ms-reporting
+    depends_on:
+      - kafka
+    ports:
+      - "8091:8091"
+    environment:
+      REPORTING_PORT: 8091
+  fdns-ms-reporting-archiver:
+    image: cdcgov/fdns-ms-reporting-kafka
+    depends_on:
+      - fdns-ms-reporting
+    environment:
+      PROFILE_NAME: ARCHIVER
+      GROUP_NAME: reporting-archiver-group
+      INCOMING_TOPIC_NAME: reporting-archiver
+      ERROR_TOPIC_NAME: reporting-error
+      KAFKA_BROKERS: kafka:29092
+      STORAGE_URL: http://fdns-ms-storage:8082
+      OBJECT_URL: http://fdns-ms-object:8083
+      INDEXING_URL: http://fdns-ms-indexing:8084
+      OAUTH_URL: ''
+      OAUTH_ENABLED: 'false'
+      OAUTH_CLIENTID: ''
+      OAUTH_CLIENTSECRET: ''
+      OAUTH_SCOPES: ''
+      SSL_VERIFYING_DISABLE: 'false'
+  fdns-ms-reporting-combiner:
+    image: cdcgov/fdns-ms-reporting-kafka
+    depends_on:
+      - fdns-ms-reporting
+    environment:
+      PROFILE_NAME: COMBINER
+      GROUP_NAME: reporting-combiner-group
+      INCOMING_TOPIC_NAME: reporting-combiner
+      ERROR_TOPIC_NAME: reporting-error
+      KAFKA_BROKERS: kafka:29092
+      STORAGE_URL: http://fdns-ms-storage:8082
+      OBJECT_URL: http://fdns-ms-object:8083
+      INDEXING_URL: http://fdns-ms-indexing:8084
+      COMBINER_URL: http://fdns-ms-combiner:8085
+      MICROSOFT_UTILS_URL: http://fdns-ms-msft-utils:8086
+      OAUTH_URL: ''
+      OAUTH_ENABLED: 'false'
+      OAUTH_CLIENTID: ''
+      OAUTH_CLIENTSECRET: ''
+      OAUTH_SCOPES: ''
+      SSL_VERIFYING_DISABLE: 'false'

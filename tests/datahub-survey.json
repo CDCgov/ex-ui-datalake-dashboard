@@ -1,0 +1,57 @@
+{
+	"mongo": {
+		"database": "datahub",
+		"collection": "survey"
+	},
+	"elastic": {
+		"index": "datahub",
+		"type": "survey"
+	},
+	"mapping": {
+		"$unset": [
+			"_id",
+			"APPLES",
+			"ORANGES",
+			"PEACHES",
+			"PEARS",
+			"KIWIS",
+			"BERRIES",
+			"DATES",
+			"FIGS",
+			"GRAPES",
+			"LIMES"
+		],
+		"$set": {
+
+		}
+	},
+	"filters": {
+		"year": {
+			"regex": "year:(\\w+)",
+			"regexGroup": 1,
+			"queryType": "multi_match",
+			"clause": "must",
+			"fields": [
+				"year"
+			]
+		},
+		"OBHOS": {
+			"regex": "OBHOS:(\\w+)",
+			"regexGroup": 1,
+			"queryType": "multi_match",
+			"clause": "must",
+			"fields": [
+				"OBHOS"
+			]
+		}
+	},
+	"appendToQuery": {
+		"aggs": {
+			"years": {
+				"terms": {
+					"field": "year"
+				}
+			}
+		}
+	}
+}

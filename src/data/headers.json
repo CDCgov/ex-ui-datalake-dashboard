@@ -1,0 +1,71 @@
+[
+  {
+    "path": "$.APPLES",
+    "label": "APPLES",
+    "visible": true,
+    "icon": "bed"
+  },
+  {
+    "path": "$.ORANGES",
+    "label": "ORANGES",
+    "visible": true,
+    "icon": "globe",
+    "iconColor": "96A0FF"
+  },
+  {
+    "path": "$.PEACHES",
+    "label": "PEACHES",
+    "visible": true,
+    "icon": "sort-numeric-down",
+    "iconColor": "FF96DF"
+  },
+  {
+    "path": "$.PEARS",
+    "label": "PEARS",
+    "visible": true,
+    "icon": "heartbeat",
+    "iconColor": "FF96DF"
+  },
+  {
+    "path": "$.KIWIS",
+    "label": "KIWIS",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "3CC697"
+  },
+  {
+    "path": "$.BERRIES",
+    "label": "BERRIES",
+    "visible": true,
+    "icon": "child",
+    "iconColor": "F66767"
+  },
+  {
+    "path": "$.DATES",
+    "label": "DATES",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "D496FF"
+  },
+  {
+    "path": "$.FIGS",
+    "label": "FIGS",
+    "visible": true,
+    "icon": ["far", "hospital"],
+    "iconColor": "FFBC67"
+  },
+  {
+    "path": "$.GRAPES",
+    "label": "GRAPES",
+    "visible": true,
+    "icon": "bed",
+    "iconColor": "A2558B"
+  },
+  {
+    "path": "$.LIMES",
+    "label": "LIMES",
+    "visible": true,
+    "icon": "file-alt",
+    "iconColor": "999885"
+  }
+]

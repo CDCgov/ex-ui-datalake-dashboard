@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+nav.header .container-fluid {
+  padding: 0;
+  background: #fff;
+}
+
+nav.header .container-fluid .navbar-header {
+  padding: 0;
+  margin: 0;
+}
+nav.header .container-fluid .navbar-brand {
+  height: 60px;
+  margin: 0;
+}
+nav.header .container-fluid .navbar-form.search {
+  width: 65%;
+  padding: 0;
+  margin: 0;
+}
+
+div.data-header {
+  padding: 0 5px 10px 0;
+  text-align: right;
+}
+div.data-header .option-view {
+  display: inline;
+  margin: 0 0 0 5px;
+}
+div.data-header > div.icon-button {
+  display: inline;
+  margin: 0 0 0 5px;
+  position: relative;
+  top: -1px;
+}
+
+/* TODO: remove when the common-ui-react component is ready */
+div.data-header .options-export {
+  float: left;
+  padding: 0;
+}
+div.data-header .options-export div.data-endpoint {
+  max-width: 250px;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+div.data-header .options-export div.option-export {
+  display: inline-block;
+  position: relative;
+  top: -13px;
+}
+
+div.data-footer {
+  padding: 15px 5px 0 5px;
+}
+div.data-footer .pagination {
+  margin: 0;
+}
+
+/* small fix for data layers */
+div.data-layers div.layers-headers .col.col-label,
+div.data-layers div.layers-rows div.layers-row .col.col-label {
+  text-align: left;
+}
+
+.navbar-form.dropdowns {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-downloads {
+  display: inline;
+}
+.dropdown-downloads .dropdown.btn-group button.dropdown-toggle {
+  width: 60px;
+  height: 60px;
+  border-right: 1px solid #eee;
+}
+.dropdown-user {
+  display: inline;
+}
+.dropdown-user div.dropdown {
+  padding: 9px;
+}
+
+.pane-history {
+  position: relative;
+  top: -15px;
+}
+
+div.data-layers div.layers-headers .col.col-label, div.data-layers div.layers-rows div.layers-row .col.col-label {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+div.data-layers div.layers-headers .col.col-key-name, div.data-layers div.layers-rows div.layers-row .col.col-key-name {
+  max-width: 100%;
+  flex-basis: 25%;
+}
+
+div.data-layers div.layers-headers .col.col-display {
+  padding-left: 15px;
+}
+div.data-layers div.layers-headers .col.col-display, div.data-layers div.layers-rows div.layers-row .col.col-display {
+  max-width: 100%;
+  flex-basis: 20%;
+}
+
+/* admin button */
+#adminBtn {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 8px;
+  left: 0;
+  height: 62px;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

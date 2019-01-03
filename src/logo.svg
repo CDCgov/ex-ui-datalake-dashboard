@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="39px" viewBox="0 0 116 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-xlr-accelerator-team</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.9%" y="-4.1%" width="107.7%" height="108.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.577672101 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="97.5745376%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#0065AC" offset="0%"></stop>
+            <stop stop-color="#00F5E4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#12CECE" offset="0%"></stop>
+            <stop stop-color="#83FFE3" offset="100%"></stop>
+        </linearGradient>
+        <text id="text-4" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="12" font-weight="bold" letter-spacing="0.200000003">
+            <tspan x="32" y="21" fill="#566C82">Datalake Dashboard UI</tspan>
+            <tspan x="120.172" y="21" font-size="10" fill="#566C82"></tspan>
+            <tspan x="32" y="36" font-size="10" fill="#767778">XLR Lab</tspan>
+            <tspan x="73.78" y="36" font-size="10" fill="#767778">s</tspan>
+        </text>
+        <filter x="-1.7%" y="-1.9%" width="102.2%" height="107.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.411288496 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="cdc-results-advanced-search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-22.000000, -9.000000)">
+        <g id="logo-xlr-accelerator-team" transform="translate(22.000000, 10.000000)">
+            <g id="logo" filter="url(#filter-1)">
+                <polygon id="Path-14" fill="#CFE1E2" points="6.47106945 9.90238492 20.1000639 9.87509138 20.1749099 16.4228125 17.9640284 16.6683107 20.2317754 21.924329 4.77913983 24.5239672 8.4515656 16.849741 6.00766726 16.3764135"></polygon>
+                <path d="M19.8942791,20.1129381 L25.5920251,31.6804595 C26.2509266,33.0181565 25.7006542,34.6367194 24.3629572,35.2956209 C23.9918173,35.4784311 23.5836306,35.5735062 23.1699104,35.5735062 L3.34792148,35.5735062 C1.85675265,35.5735062 0.647921477,34.3646751 0.647921477,32.8735062 C0.647921477,32.4597861 0.742996638,32.0515993 0.925806826,31.6804595 L5.19476197,23.0136587 L19.8942791,20.1129381 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                <path d="M19.8942791,20.1129381 C19.5336649,21.4563294 17.2738953,21.8888474 13.1149704,21.4104921 C9.41311295,21.0941743 6.77304348,21.6285632 5.19476197,23.0136587 L19.8942791,20.1129381 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                <ellipse id="Oval" fill="#15D5D5" cx="13.8738541" cy="13.9136254" rx="1.91639517" ry="1.83725193"></ellipse>
+                <polygon id="Path-15" fill="#B3C6C6" opacity="0.301772388" points="6.71183393 10.2515986 20.0354507 10.2694113 20.3408284 11.2965104 20.3686033 11.8787248 6.21071842 11.8787248"></polygon>
+                <path d="M8.61523026,16.8983123 L7.36850127,16.8983123 C6.45423279,16.8983123 5.71307174,16.1571512 5.71307174,15.2428827 L5.71307174,11.3208336 C5.71307174,10.4065651 6.45423279,9.66540409 7.36850127,9.66540409 L19.1466021,9.66540409 C20.0608706,9.66540409 20.8020316,10.4065651 20.8020316,11.3208336 L20.8020316,15.2428827 C20.8020316,16.1571512 20.0608706,16.8983123 19.1466021,16.8983123 L17.8985982,16.8983123 C18.1105073,17.1818444 18.2971094,17.485707 18.4552333,17.8067291 L25.5906608,32.2930206 C26.2495623,33.6307176 25.6992899,35.2492805 24.3615929,35.9081821 C23.9904531,36.0909923 23.5822663,36.1860674 23.1685462,36.1860674 L3.34655719,36.1860674 C1.85538836,36.1860674 0.646557189,34.9772362 0.646557189,33.4860674 C0.646557189,33.0723473 0.741632351,32.6641605 0.924442539,32.2930206 L8.05987004,17.8067291 C8.21989785,17.4818418 8.40630434,17.1785989 8.61523026,16.8983123 Z" id="Combined-Shape" stroke="#767778" stroke-width="1.21000004" fill-opacity="0.133463542" fill="#FFFFFF"></path>
+                <ellipse id="Oval" stroke="#767778" stroke-width="0.598752" fill="#79D7C2" cx="10.221031" cy="5.13766097" rx="1.67655109" ry="1.60731293"></ellipse>
+                <ellipse id="Oval" stroke="#767778" stroke-width="0.598752" fill="#5FF2E4" cx="15.2506843" cy="1.32029274" rx="1.37716694" ry="1.32029274"></ellipse>
+                <ellipse id="Oval" fill="#4DF2F2" cx="13.0951186" cy="21.7202511" rx="1.67655109" ry="1.60731293"></ellipse>
+                <ellipse id="Oval" fill="#00E5DF" cx="16.9272354" cy="28.1495028" rx="1.67655109" ry="1.60731293"></ellipse>
+                <ellipse id="Oval" fill="#5CF1F1" cx="11.6880132" cy="26.843561" rx="1" ry="1"></ellipse>
+                <path d="M9.67263766,20.8934949 L3.84654967,32.8601005" id="Path-4" stroke="#FFFFFF" stroke-width="1.6884806" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.8796761,18.6689275 L11.6252127,17.0633489" id="Path-4" stroke="#FFFFFF" stroke-width="1.6884806" opacity="0.949999988" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Datalake-UI" fill="#566C82" fill-opacity="1">
+                <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                <use xlink:href="#text-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>
